@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gender">
+        <item>不限</item>
+        <item>男 </item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="industry">
+        <item>人力</item>
+        <item>销售 </item>
+        <item>市场</item>
+        <item>行政</item>
+        <item>客服</item>
+        <item>广告业</item>
+        <item>生产行业</item>
+        <item>汽车服务</item>
+        <item>物流运输</item>
+        <item>法律</item>
+        <item>医疗</item>
+        <item>金融</item>
+        <item>建筑</item>
+        <item>装修</item>
+        <item>酒店/旅游</item>
+        <item>运动健身</item>
+        <item>其他</item>
+
+    </string-array>
+
+</resources>

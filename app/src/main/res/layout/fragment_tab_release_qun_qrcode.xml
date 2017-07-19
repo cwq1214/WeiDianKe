@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F4F4"
+            >
+            <LinearLayout
+                android:id="@+id/layout_selImg"
+                android:background="#FFFFFF"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/codeName"
+                    android:textColor="#000000"
+                    android:text="二维码"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColorHint="#bbbbbb"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:hint="上传二维码"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/selImg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/shape_gray_rect" />
+
+                <ImageView
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="介绍"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp" />
+                <EditText
+                    android:id="@+id/input_des"
+                    android:textColorHint="#bbbbbb"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:hint="您最多可输入50个字"
+                    android:maxLength="50"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/payItem"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="#FFFFFF"
+
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_jifenPay">
+                    <TextView
+                        android:text="积分发布，需20积分，剩余200积分"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jifen" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#8db6eb"
+                        android:text="获取积分"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/huoqujifen" />
+
+                    <CheckBox
+                        android:clickable="false"
+                        android:button="@null"
+                        android:background="@drawable/cb_red"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/cb_jifen"
+                        android:checked="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#FFFFFF"
+
+                    android:layout_marginTop="2dp"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_yuePay">
+                    <TextView
+                        android:text="付费发布，需1元，剩余10元  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yue" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#8db6eb"
+                        android:text="充值"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chongzhi" />
+
+                    <CheckBox
+                        android:clickable="false"
+                        android:button="@null"
+                        android:background="@drawable/cb_red"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/cb_yue" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/unPayItem"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:text="免费发布二维码"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#e2333c"
+                android:layout_margin="8dp"
+                android:text="温馨提示： \n1：一个账户只能发布一个名片，一张V信群，一张公众号。如需发布多个，请退出当前账号，登陆另一个手机号码。 \n2：禁止发布黄色、枪支、等敏感违规信息。发现删除并拉黑处理。 "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/done"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="确认发布"
+        android:textColor="#FFFFFF"
+        android:background="#e2333c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

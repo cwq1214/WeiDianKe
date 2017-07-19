@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    >
+    <RelativeLayout
+        android:background="#e2333c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_white"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:text="头像昵称设置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/layout_selImg">
+        <TextView
+            android:text="用户头像"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/img_selImg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_gray_rect" />
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/arrow1"
+            android:layout_width="13dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="昵        称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:layout_marginLeft="16dp"
+            android:textColorHint="#bbbbbb"
+            android:background="@null"
+            android:hint="您最多可输入15个字"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/input_nickName"
+            android:textColor="#000000" />
+    </LinearLayout>
+    
+    
+    <TextView
+        android:layout_marginTop="179dp"
+        android:gravity="center"
+        android:background="@color/red"
+        android:textColor="#FFFFFF"
+        android:text="确认提交"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/done" />
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    >
+    <RelativeLayout
+        android:background="#e2333c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_white"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:text="个人名片"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/avatar"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="8dp" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:padding="8dp"
+            android:text="复制v信号"
+            android:background="@drawable/shape_red_border"
+            android:textColor="#e2333c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copy" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="人气"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="8dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/likes"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF"
+        android:gravity="top|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="描述"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:text="miamiamiamiamiamiamiamiamiamiamiamiamiamiamiamiamiamiamiamiamiamiamia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/des"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/save">
+            <ImageView
+                android:src="@drawable/download"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:text="保存二维码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="1dp"
+            android:id="@+id/divider" />
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/importData">
+            <ImageView
+                android:src="@drawable/maillist"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:text="导入通讯录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

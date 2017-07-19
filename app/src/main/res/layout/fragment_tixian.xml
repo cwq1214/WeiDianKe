@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/back_white" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/btn_ico_refresh"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:text="提现"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="提现说明:"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/searchcolor"
+            android:text="1、为防止作弊，邀请的好友当中，至少要有一位VIP或是超级VIP会员才可以提现"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/searchcolor"
+            android:text="2、提现申请将在1-3个工作日内发放到您指定的支付宝账号内"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="您的支付宝:"
+            android:layout_marginTop="20dp"/>
+
+        <com.hzkj.wdk.widget.ClearEditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入支付宝账号"
+            android:background="@drawable/et_gray_angle"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:imeOptions="flagNoExtractUi"
+            android:textColor="@color/black3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="您的姓名:"
+            android:layout_marginTop="20dp"/>
+
+        <com.hzkj.wdk.widget.ClearEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的姓名"
+            android:background="@drawable/et_gray_angle"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:imeOptions="flagNoExtractUi"
+            android:textColor="@color/black3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="提现金额:"
+            android:layout_marginTop="20dp"/>
+
+        <com.hzkj.wdk.widget.ClearEditText
+            android:id="@+id/et_jine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入提现金额"
+            android:background="@drawable/et_gray_angle"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:imeOptions="flagNoExtractUi"
+            android:textColor="@color/black3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额："
+                android:textColor="@color/black3"
+                />
+
+            <TextView
+                android:id="@+id/tv_yue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.00元"
+                android:textColor="@color/red"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(10元起提现)"
+                android:textColor="@color/searchcolor"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:text="确认提现"
+            android:background="@drawable/btn_red_angle"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

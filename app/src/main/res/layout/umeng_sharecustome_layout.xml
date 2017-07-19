@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_whitebg_noedge_bg"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner_white_noedgebg"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                     android:id="@+id/umshare_wxcircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/share_wxcircle" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/umshare_wxcircle"
+                        android:textColor="@color/black2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/umshare_wx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:background="@drawable/corner_white_noedgebg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_wx" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/umshare_wx"
+                        android:textColor="@color/black2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/umshare_sina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:background="@drawable/corner_white_noedgebg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/share_sina" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/umshare_sina"
+                        android:textColor="@color/black2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/umshare_qqzone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:background="@drawable/corner_white_noedgebg"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/share_qqzone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/umshare_qzone"
+                        android:textColor="@color/black2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/umshare_qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/umeng_socialize_qq_on" />
+
+                <ImageView
+                    android:id="@+id/umshare_tencent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/umeng_socialize_tx_on" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/umshare_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/corner_white_noedgebg"
+            android:text="取消"
+            android:textSize="17sp"
+            android:textColor="#737373" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

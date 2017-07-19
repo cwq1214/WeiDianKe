@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="2dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp">
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/avatar"
+            android:scrollbarAlwaysDrawHorizontalTrack="false" />
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textSize="8sp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:background="@drawable/shape_org_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/likes" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape_purple_vip_type"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="9sp"
+            android:gravity="center"
+            android:text="紫钻会员"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vipName" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:text="张三"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:text="想做微商，请带路！想做微商，请带路！想做微商，请带路！想做微商，请带路！想做微商，请带路！想做微商，请带路！想做微商，请带路！想做微商，请带路！想做微商，请带路！想做微商，请带路！想做微商，请带路"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:id="@+id/des"
+                android:autoText="false"
+                android:lines="2" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textColor="#FFFFFF"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:textSize="8sp"
+            android:background="@drawable/shape_blue_angle"
+            android:text="紫钻会员"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qrcodeVip_name" />
+    </LinearLayout>
+    
+    <TextView
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_purple_angle"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:text="  加好友  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/done" />
+</LinearLayout>

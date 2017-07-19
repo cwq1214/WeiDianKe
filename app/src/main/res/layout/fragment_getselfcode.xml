@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    >
+    <RelativeLayout
+        android:background="#e2333c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_white"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:text="复制图片"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/save"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_red_angle"
+        android:text="保存您的专属二维码到手机"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_home1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="会员中心"
+            android:drawableTop="@drawable/home_zidong"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_home2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="抽奖"
+            android:drawableTop="@drawable/home_beidong1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black3"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_home4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="二维码平台"
+            android:drawableTop="@drawable/code_nor"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black3"/>
+        <TextView
+            android:id="@+id/tv_home3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新手指南"
+            android:drawableTop="@drawable/home_zhinan1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black3"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager android:id="@+id/container"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+
+        android:layout_above="@+id/ll_bottom"/>
+
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+    <FrameLayout
+        android:id="@+id/tabs_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></FrameLayout>
+
+</RelativeLayout>

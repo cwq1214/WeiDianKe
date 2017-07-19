@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/corner_white_noedgebg"
+    android:padding="16dp">
+    <TextView
+        android:text="邀请好友有奖励"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="@drawable/shape_red_border"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/weixin"
+            android:layout_margin="8dp">
+            <ImageView
+                android:src="@drawable/umeng_socialize_wechat"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:text="微信"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/pengyouquan"
+            android:layout_margin="8dp">
+            <ImageView
+                android:src="@drawable/umeng_socialize_wxcircle"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:text="朋友圈"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/link"
+            android:layout_margin="8dp">
+            <ImageView
+                android:src="@drawable/link"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="6dp" />
+            <TextView
+                android:text="复制链接"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/qq"
+            android:layout_margin="8dp">
+            <ImageView
+                android:src="@drawable/umeng_socialize_qq_on"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:text="QQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/qzone"
+            android:layout_margin="8dp">
+            <ImageView
+                android:src="@drawable/umeng_socialize_qzone_on"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:text="QQ空间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/img"
+            android:layout_margin="8dp">
+            <ImageView
+                android:src="@drawable/photo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="6dp" />
+            <TextView
+                android:text="复制图片"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

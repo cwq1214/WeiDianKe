@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical" 
+     >
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bg_dra"
+        android:orientation="vertical" 
+        android:alpha="0.9"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/customdialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="温馨提示"
+            android:textColor="@color/new_black"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        
+        <com.hzkj.wdk.widget.CenterTextView
+            android:id="@+id/customdialog_message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="您已经暂停路加粉，如需要继续使用情点击激活！（暂停期间将不会有人加您）"
+            android:textColor="@color/new_black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:id="@+id/d_line"
+            style="@style/diviling_line"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/customdialog_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <View style="@style/diviling_line2" 
+                android:layout_height="39dp"
+                android:id="@+id/d_line1"/>
+
+            <Button
+                android:id="@+id/customdialog_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="激活"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

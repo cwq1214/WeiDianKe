@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_translation"
+    android:orientation="vertical" 
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bg_dra"
+        android:orientation="vertical" 
+
+        android:layout_margin="50dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/customdialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="用户登录"
+            android:textColor="@color/new_black"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dialog_bg_login"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="手机号"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:layout_toRightOf="@+id/iv_phone"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black3"
+                    android:textColorHint="@color/black3"/>
+
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/searchcolor"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pwd"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="验证码"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="6"
+                    android:layout_toRightOf="@+id/iv_code"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black3"
+                    android:textColorHint="@color/black3"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:id="@+id/btn_getCode"
+                    android:text="获取验证码"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_gray_angle"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:enabled="false"/>
+
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/searchcolor"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_phone_invite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:id="@+id/et_phone_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="邀请人手机号(没有可不填)"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:layout_toRightOf="@+id/iv_phone_invite"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black3"
+                    android:textColorHint="@color/black3"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="填邀请人手机号有奖励"
+            android:textColor="@color/new_black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gray_angle"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:enabled="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

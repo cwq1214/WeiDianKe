@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bg_dra"
+        android:orientation="vertical"
+        android:alpha="1"
+        android:elevation="24dp">
+
+        <TextView
+            android:textColor="#666"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="请选择要操作的项"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <View
+            android:id="@+id/d_line"
+            style="@style/diviling_line"
+            />
+
+        <TextView
+            android:text="保存二维码到相册"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:id="@+id/save"
+            android:textSize="16sp"
+            android:layout_height="48dp" />
+        <View
+            android:id="@+id/d_line2"
+            style="@style/diviling_line"
+            />
+
+        <TextView
+            android:text="添加到通讯录"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:id="@+id/add"
+            android:textSize="16sp"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bg_dra"
+        android:orientation="vertical"
+        android:alpha="1"
+        android:layout_height="48dp">
+
+
+        <TextView
+            android:text="取消"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:id="@+id/cancel"
+            android:textSize="16sp"
+            android:layout_height="48dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

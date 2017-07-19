@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    sourceSets.main.jniLibs.srcDirs = ['libs']
+    signingConfigs {
+        config {
+            keyAlias 'heizikeji'
+            keyPassword 'heizikeji'
+            storeFile file('heizikejiAS.keystore')
+            storePassword 'heizikeji'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.hzkj.wdk"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 4
+        versionName "2.02"
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile project(':library')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile files('libs/SocialSDK_tencentWB_1.jar')
+    compile files('libs/SocialSDK_tencentWB_2.jar')
+    compile files('libs/SocialSDK_tencentWB_3.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/libapshare.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5509.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile files('libs/alipaySdk-20151215.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/wup-1.0.0.E-SNAPSHOT.jar')
+    compile files('libs/Xg_sdk_v2.46_20160602_1638.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    compile ('com.jakewharton:butterknife:8.5.1'){
+        exclude module: 'support-compat'
+    }
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.4'
+    compile 'com.qiniu:qiniu-java-sdk:7.2.+'
+    compile 'com.qiniu:qiniu-android-sdk:7.2.+'
+}

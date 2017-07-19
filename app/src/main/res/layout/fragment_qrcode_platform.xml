@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    >
+    <RelativeLayout
+        android:background="#e2333c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/back_white"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/back" />
+
+        <TextView
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager" />
+
+    <LinearLayout
+        android:paddingBottom="2dp"
+        android:paddingTop="5dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_baofen">
+            <ImageView
+                android:src="@drawable/money_sel"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/img_baofen" />
+            <TextView
+                android:textColor="#e2333c"
+                android:layout_marginTop="2dp"
+                android:text="挂机爆粉"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_baofen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_vip">
+            <ImageView
+                android:src="@drawable/crown_nor"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/img_vip" />
+            <TextView
+                android:textColor="#a9b7b7"
+                android:layout_marginTop="2dp"
+                android:text="会员服务"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_vip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_jifen">
+            <ImageView
+                android:src="@drawable/gift_nor"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/img_jifen" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:textColor="#a9b7b7"
+                android:text="积分商城"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_jifen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_personal">
+            <ImageView
+                android:src="@drawable/person_nor"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/img_ren" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:textColor="#a9b7b7"
+                android:text="个人中心"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pbtnName" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
